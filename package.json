@@ -1,0 +1,32 @@
+{
+  "name": "all-in-style",
+  "version": "1.0.0",
+  "description": "All in style",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imnull/all-in-style.git"
+  },
+  "keywords": [
+    "css",
+    "style",
+    "react"
+  ],
+  "author": "imnull@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imnull/all-in-style/issues"
+  },
+  "homepage": "https://github.com/imnull/all-in-style#readme",
+  "dependencies": {
+    "@types/css": "0.0.31",
+    "css": "^3.0.0",
+    "css-what": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37"
+  }
+}
