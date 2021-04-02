@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 
-import { getRulesFromFile, compute } from './src'
+import { getRulesFromFile, compute } from '../src'
 
 const node1 = {
     nodeName: 'a',
