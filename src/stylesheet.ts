@@ -1,25 +1,9 @@
 import { readFileSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
-
 import { parse } from 'css'
 
-const trimQuote = (s: any) => {
-    if(typeof s !== 'string' || s.length < 2) {
-        return s
-    }
-    s = s.trim()
-    if(/^(["'])[\w\W]*\1$/.test(s)) {
-        s = s.slice(1, -1)
-    }
-    return s
-}
-
-const css2js = (s: any) => {
-    if(typeof s !== 'string') {
-        return s
-    }
-    return s.replace(/\-[a-z]/g, m => m.charAt(1).toUpperCase())
-}
+import { TStyleSheetItem } from './type'
+import { css2js, trimQuote } from './utils'
 
 const convertDeclaration = (declarations: any) => {
     if(!Array.isArray(declarations)) {
@@ -68,7 +52,7 @@ export const getRules = (cssText: string, pathContext: string) => {
 
 
 
-export const getRulesFromFile = (filename: string, trap: string[] = []): { selectors: string[], declarations: { [key: string]: string } }[] => {
+export const getRulesFromFile = (filename: string, trap: string[] = []): TStyleSheetItem[] => {
     if(!existsSync(filename) || trap.includes(filename)) {
         return []
     }
