@@ -38,8 +38,6 @@ class Wrapper extends React.Component {
         const { styles, dom, children, componentType, componentProps, componentRef } = this.props
         const style = compute(styles, dom)
         return React.createElement(componentType, { ...componentProps, style, ref: componentRef }, children)
-        console.log(componentType, styles, dom, style, children)
-        return children
     }
 }
 

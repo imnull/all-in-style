@@ -4,12 +4,14 @@ import Provider from './components/provider'
 
 import styles from './app.css'
 
+console.log(styles)
+
 export default () => {
     return (
         <Provider styles={styles}>
             <div className="container">
                 <h1>Hello World <em>there</em></h1>
-                <h4>{getData()}</h4>
+                <span>{getData()}</span>
             </div>
         </Provider>
     )
