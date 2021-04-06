@@ -1,32 +1,43 @@
 {
-  "name": "all-in-style",
-  "version": "1.0.0",
-  "description": "All in style",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "ts-node test/test.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imnull/all-in-style.git"
-  },
-  "keywords": [
-    "css",
-    "style",
-    "react"
-  ],
-  "author": "imnull@outlook.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/imnull/all-in-style/issues"
-  },
-  "homepage": "https://github.com/imnull/all-in-style#readme",
-  "dependencies": {
-    "@types/css": "0.0.31",
-    "css": "^3.0.0",
-    "css-what": "^5.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^14.14.37"
-  }
+    "name": "demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "webpack serve --config=cfg/dev.js",
+        "build": "webpack --config=cfg/build.js"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "keywords": [],
+    "dependencies": {
+        "css": "^3.0.0",
+        "css-computer": "^2.1.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.1",
+        "@babel/plugin-transform-runtime": "^7.13.7",
+        "@babel/preset-react": "^7.12.13",
+        "babel-loader": "^8.2.2",
+        "babel-plugin-import": "^1.13.3",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^5.0.2",
+        "css-min-loader": "^1.0.4",
+        "css-reducer": "^2.1.0",
+        "html-webpack-plugin": "^4.5.2",
+        "less-loader": "^7.3.0",
+        "style-loader": "^2.0.0",
+        "ts-loader": "^8.0.17",
+        "typescript": "^4.2.3",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^5.30.0",
+        "webpack-bundle-analyzer": "^3.9.0",
+        "webpack-cli": "^4.6.0",
+        "webpack-dev-server": "^3.11.2"
+    }
 }

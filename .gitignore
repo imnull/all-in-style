@@ -1,5 +1,6 @@
-package-lock.json
 node_modules
-dist
-public
 demo
+dist
+package-lock.json
+.DS_Store
+build
